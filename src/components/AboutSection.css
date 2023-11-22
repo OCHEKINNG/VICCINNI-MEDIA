@@ -1,0 +1,50 @@
+      
+      @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+
+ 
+    .about__section-content {
+        width: 80%;
+        padding: 2rem 1rem;
+        margin: auto;
+        max-width: 1880px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px 30px;
+    }
+
+    .about__section-content .about__img {
+        overflow: hidden;
+    }
+
+    .about__section-content .about__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about__section-content .section__description {
+        display: flex;
+        align-items: center;
+    }
+    .about__section-content .section__description .content {
+        padding-left: 20px;
+    }
+
+    .about__section-content .section__description .content p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 15px;
+    }
+
+
+    @media  (max-width: 991px) {
+        .about__section-content .section__description .content {
+            padding-left: 0;
+        }
+    }
+    @media  (max-width: 768px) {
+        .about__section-content {
+            width: 90%;
+            grid-template-columns: 1fr;
+        }
+    }
